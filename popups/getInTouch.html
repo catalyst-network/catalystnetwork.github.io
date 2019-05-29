@@ -1,31 +1,36 @@
-
 <div class="popup__unit">
-  <div class="popup__close js-close-popup"><span class="icon-close"></span></div>
-  <div class="popup__form">
-    <form class="form-popup" name="form" action="" method="POST" data-rules="{   
+    <div class="popup__close js-close-popup"><span class="icon-close"></span></div>
+    <div class="popup__form">
+        <form class="form-popup" name="form" action="" method="POST" data-rules="{
           &quot;name&quot;: {&quot;required&quot; : true},         
           &quot;email&quot;: { &quot;required&quot; : true, &quot;email&quot;: true, &quot;emailMethod&quot;: true}, 
           &quot;phone&quot;: {&quot;required&quot; : true, &quot;minlength&quot;: &quot;8&quot;, &quot;maxlength&quot;: &quot;13&quot;},
           &quot;message&quot;:{&quot;required&quot; : true}
         }">
-      <label data-name="nonfield">     </label>
-      <div class="form__wrap">
-        <div class="popup__input">
-          <input class="input js-text" type="text" name="name" placeholder="Name" data-msg-required="This field is required">
-        </div>
-        <div class="popup__input">
-          <input class="input" type="email" name="email" placeholder="E-mail" data-msg="Invalid value" data-msg-required="This field is required">
-        </div>
-        <div class="popup__input">
-          <input class="input" type="number" name="phone" placeholder="Phone" data-msg-minlength="Please enter no less than 8 characters" minlength="8" maxlength="13" data-msg-required="This field is required" data-msg-maxlength="Please enter no more than 13 characters">
-        </div>
-        <div class="popup__textarea"> 
-          <textarea class="textarea" name="message" placeholder="Message" data-msg-required="This field is required"></textarea>
-        </div>
-        <div class="popup__submit">
-          <button class="submit flex-center transition" type="submit">SEND</button>
-        </div>
-      </div>
-    </form>
-  </div>
+            <label data-name="nonfield"> </label>
+            <div class="form__wrap">
+                <div class="popup__input">
+                    <input class="input js-text" type="text" name="name" placeholder="Name"
+                           data-msg-required="This field is required">
+                </div>
+                <div class="popup__input">
+                    <input class="input" type="email" name="email" placeholder="E-mail" data-msg="Invalid value"
+                           data-msg-required="This field is required">
+                </div>
+                <div class="popup__input">
+                    <input class="input" type="number" name="phone" placeholder="Phone"
+                           data-msg-minlength="Please enter no less than 8 characters" minlength="8" maxlength="13"
+                           data-msg-required="This field is required"
+                           data-msg-maxlength="Please enter no more than 13 characters">
+                </div>
+                <div class="popup__textarea">
+                    <textarea class="textarea" name="message" placeholder="Message"
+                              data-msg-required="This field is required"></textarea>
+                </div>
+                <div class="popup__submit">
+                    <button class="submit flex-center transition" type="submit">SEND</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </div>
