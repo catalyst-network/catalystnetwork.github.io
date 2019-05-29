@@ -174,8 +174,6 @@ $(document).ready(function ($) {
     }, 200, function () {
       timelineArrowCheck();
     });
-
-    return;
   };
 
   var timelineInitMobile = function timelineInitMobile() {
@@ -217,8 +215,6 @@ $(document).ready(function ($) {
     } else {
       $('.js-timeline-next, .js-timeline-prev').removeClass('deactivated');
     }
-
-    return;
   };
 
   if ($(window).width() < 720) {
@@ -534,7 +530,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   AOS.init({
     disable: 'mobile',
-    offset: 300,
+    offset: 100,
     easing: 'ease-in-sine',
     once: true
   });
@@ -552,11 +548,50 @@ window.initMap = initMap;
 
 function initMap() {
   var uluru = $('#map').data("position");
-  axios.get('./../static/js/map-styles.json').then(function (styles) {
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 16,
       center: uluru,
-      styles: styles.data
+                styles: [{
+                    "featureType": "all",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{"color": "#a8afbf"}]
+                }, {
+                    "featureType": "all",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{"visibility": "on"}, {"color": "#373d48"}, {"weight": 2}, {"gamma": "1"}]
+                }, {
+                    "featureType": "all",
+                    "elementType": "labels.icon",
+                    "stylers": [{"visibility": "off"}]
+                }, {
+                    "featureType": "administrative",
+                    "elementType": "geometry",
+                    "stylers": [{"weight": 0.6}, {"color": "#4c576f"}, {"gamma": "0"}]
+                }, {
+                    "featureType": "administrative.country",
+                    "elementType": "geometry.fill",
+                    "stylers": [{"saturation": "50"}]
+                }, {
+                    "featureType": "landscape",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#172E3E"}, {"gamma": "1"}, {"weight": "10"}]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#4c576f"}]
+                }, {
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#172E3E"}]
+                }, {
+                    "featureType": "road",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#0C2332"}, {"lightness": "0"}]
+                }, {
+                    "featureType": "transit",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#4c576f"}]
+                }, {"featureType": "water", "elementType": "geometry", "stylers": [{"color": "#223949"}]}]
     });
     var icon = './../static/images/marker.png';
     var marker = new google.maps.Marker({
@@ -579,7 +614,6 @@ function initMap() {
     google.maps.event.addListener(map, 'click', function () {
       infowindow.close();
     });
-  });
 }
 
 /***/ }),
