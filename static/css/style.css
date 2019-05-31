@@ -4023,21 +4023,8 @@ label.error {
     font-size: 2em;
 }
 
-.connection__icon {
-    width: 40px;
-    height: auto;
-    position: absolute;
-    bottom: 5px;
-    top: 100px;
-    right:250px;
 
-}
 
-.connection__icon a{
-    font-size: 3em;
-    z-index:1000;
-}
-
-.connection__icon a i{
-    margin-bottom: 10px;
+.connection__icon a:not(:last-child){
+    margin-right: 30px;
 }
