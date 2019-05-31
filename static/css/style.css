@@ -1311,7 +1311,7 @@ iframe {
 
 .team__text {
     font-weight: 300;
-    line-height: 24px;
+    font-size:.85em;
     height: 48px;
     overflow: hidden;
     position: absolute;
@@ -1537,7 +1537,8 @@ iframe {
 }
 
 .start__img {
-    display: none;
+    display:none;
+
 }
 
 .start__img--404 {
@@ -2738,6 +2739,7 @@ label.error {
         justify-content: flex-start;
     }
 
+
     .start__content {
         position: relative;
         width: 50%;
@@ -3858,7 +3860,7 @@ label.error {
     }
 
     .bg-2 {
-        left: 53;
+        left: 53%;
     }
 
     .bg-4 {
@@ -4001,8 +4003,41 @@ label.error {
 
 }
 
-@media only screen and (max-width: 1199px) {
-    .header__social {
+@media only screen and (max-width: 960px) {
+    .top__social {
        display:none;
     }
+}
+.top__social{
+    width:40px;
+    height:auto;
+    position:absolute;
+    right:300px;
+    bottom: 5px;
+    top:170px;
+    z-index:1000;
+
+}
+
+.top__social a {
+    font-size: 2em;
+}
+
+.connection__icon {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    bottom: 5px;
+    top: 100px;
+    right:250px;
+
+}
+
+.connection__icon a{
+    font-size: 3em;
+    z-index:1000;
+}
+
+.connection__icon a i{
+    margin-bottom: 10px;
 }
