@@ -1205,6 +1205,18 @@ iframe {
     box-shadow: 0 0 0 6px #c8e4f9;
 }
 
+.timeline__list {
+    font-weight: 300;
+    line-height: 24px;
+    height: 72px;
+    overflow: hidden;
+    padding-left:15px;
+}
+
+.timeline__list li {
+    list-style: disc inside;
+}
+
 .slick-disabled {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     opacity: 0;
@@ -2518,6 +2530,10 @@ label.error {
     .timeline__button--next {
         right: 0;
         left: auto;
+    }
+
+    .timeline__list li {
+        list-style: disc outside;
     }
 
     .timeline__block {
@@ -4014,8 +4030,8 @@ label.error {
     position:absolute;
     right:300px;
     bottom: 5px;
-    top:170px;
-    z-index:1000;
+    top:145px;
+    z-index:450;
 
 }
 
