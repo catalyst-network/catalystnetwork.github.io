@@ -311,7 +311,7 @@ $(document).ready(function() {
             $th.on("click", function(e) {
                 e.preventDefault();
                 $.ajax({
-                    method: "Post",
+                    method: "Get",
                     url: $th.data("href"),
                     success: function success(result) {
                         answerHandler(result);
