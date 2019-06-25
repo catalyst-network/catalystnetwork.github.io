@@ -276,20 +276,19 @@ $(document).ready(function() {
 
     $("#contactForm").submit(function(e){
       e.preventDefault();
-      let name = document.getElementById('contactFormName').value;
-      let email = document.getElementById('contactFormEmail').value;
-      let message = document.getElementById('contactFormMessage').value;
+      var payload = JSON.stringify({
+        name:  document.getElementById('contactFormName').value,
+        email: document.getElementById('contactFormEmail').value,
+        message: document.getElementById('contactFormMessage').value
+      })
+      console.log(payload);
   
       $.ajax({
               method: "POST",
               url: "https://catalystcontactform.azurewebsites.net/api/SendGrid1",
               processData: false,
               contentType: "application/json",
-        data: JSON.stringify({
-          name: name,
-          email: email,
-          message: message
-        }),
+        data: payload,
               success: alert("sent")
       });
     });
