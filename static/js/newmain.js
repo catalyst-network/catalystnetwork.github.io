@@ -343,7 +343,7 @@ $(document).ready(function () {
     }
   }
 
-  function seralizrFormAsJson(form){
+  function seralizrFormAsJson(form) {
     var serialized = form.serializeArray();
     var s = '';
     var data = {};
@@ -351,10 +351,9 @@ $(document).ready(function () {
         data[serialized[s]['name']] = serialized[s]['value']
     }
     return JSON.stringify(data);
-}
+  }
 
-  $(document).on("dom-bind", function (e, context) {
-    $(context).find(".form-popup").each(function () {
+    $("#contactForm").submit(function(e){
       var $th = $(this);
       var rules = JSON.parse($th.attr("data-rules") || "{}");
 
@@ -391,25 +390,6 @@ $(document).ready(function () {
           });
         }
       });
-    });
-
-    $(context).find(".js-link-ajax-popup").each(function () {
-      var $th = $(this);
-
-      $th.on("click", function (e) {
-        e.preventDefault();
-        $.ajax({
-          method: "POST",
-          processData: false,
-          contentType: "application/json",
-          url: $form.attr("action"),
-          success: function success(result) {
-            answerHandler(result);
-          },
-          error: function error(result) {}
-        });
-      });
-    });
   });
 
   $(function () {
