@@ -362,6 +362,10 @@ $(document).ready(function () {
             url: $form.attr("action"),
             datatype : "application/json",
             contentType: "text/plain",
+            headers : {
+              "Content-Type":"application/json",
+              "Content-Length": Buffer.byteLength($form.serializeArray())
+            },
             data: $form.serializeArray(),
             success: function success(result) {
               answerHandler(result, $form);
@@ -392,6 +396,10 @@ $(document).ready(function () {
           method: "POST",
           datatype : "application/json",
           contentType: "text/plain",
+          headers : {
+            "Content-Type":"application/json",
+            "Content-Length": Buffer.byteLength($form.serializeArray())
+          },
           url: $form.attr("action"),
           success: function success(result) {
             answerHandler(result);
