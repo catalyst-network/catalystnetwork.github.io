@@ -343,6 +343,16 @@ $(document).ready(function () {
     }
   }
 
+  function seralizrFormAsJson(form){
+    var serialized = form.serializeArray();
+    var s = '';
+    var data = {};
+    for(s in serialized){
+        data[serialized[s]['name']] = serialized[s]['value']
+    }
+    return JSON.stringify(data);
+}
+
   $(document).on("dom-bind", function (e, context) {
     $(context).find(".form-popup").each(function () {
       var $th = $(this);
@@ -356,13 +366,13 @@ $(document).ready(function () {
         submitHandler: function submitHandler(form) {
           var validator = this;
           var $form = $(form);
-
+         
           $.ajax({
             method: "POST",
             url: $form.attr("action"),
             processData: false,
             contentType: "application/json",
-            data: JSON.stringify($form),
+            data: seralizrFormAsJson($form),
             success: function success(result) {
               answerHandler(result, $form);
             },

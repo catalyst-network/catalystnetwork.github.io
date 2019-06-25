@@ -836,12 +836,12 @@
                     <label data-name="nonfield"></label>
                     <div class="form__wrap">
                         <div class="contact__input contact__input--w-100">
-                            <input class="input js-text" type="text" name="name" data-msg="This field is required"
+                            <input id="contactFormName" class="input js-text" type="text" name="name" data-msg="This field is required"
                                    placeholder="Name">
                         </div>
                         <div class="contact__group flex">
                             <div class="contact__input">
-                                <input class="input" type="email" name="email"
+                                <input id="contactFormEmail" class="input" type="email" name="email"
                                        data-msg="Please enter a valid email address"
                                        data-msg-required="This field is required" placeholder="Email">
                             </div>
@@ -854,7 +854,7 @@
                             </div>
                         </div>
                         <div class="contact__textarea">
-                                <textarea class="textarea" name="message" data-msg-required="This field is required"
+                                <textarea id="contactFormMessage" class="textarea" name="message" data-msg-required="This field is required"
                                           placeholder="Message"></textarea>
                         </div>
                         <div class="contact__submit">
