@@ -362,7 +362,7 @@ $(document).ready(function () {
             url: $form.attr("action"),
             processData: false,
             contentType: "application/json",
-            data: $form.serializeArray(),
+            data: JSON.stringify($form),
             success: function success(result) {
               answerHandler(result, $form);
             },
