@@ -274,91 +274,24 @@ $(document).ready(function() {
         });
     }
 
-    function answerHandler(result, form) {
-        if (typeof result.message != "undefined") {
-            form.find('label[data-name="nonfield"]').html(result.message);
-        }
-        if (typeof result === "string") {
-            $(".js-ajax-popup").html(result);
-            openPopup(".js-ajax-popup");
-            $(document).trigger("dom-bind", $(".js-ajax-popup"));
-        }
-        if (typeof result.redirect_url != "undefined") {
-            var redirect = function redirect(x) {
-                window.location = result.redirect_url;
-            };
-            if (typeof result.message != "undefined") {
-                setTimeout(redirect, "500");
-            } else {
-                redirect();
-            }
-        }
-    }
-
-    function seralizrFormAsJson(form) {
-        var serialized = form.serializeArray();
-        var s = '';
-        var data = {};
-        for (s in serialized) {
-            data[serialized[s]['name']] = serialized[s]['value']
-        }
-        return JSON.stringify(data);
-    }
-    $(document).on("dom-bind", function(e, context) {
-
-        $(context).find(".js-link-ajax-popup").each(function() {
-            var $th = $(this);
-            $th.on("click", function(e) {
-                e.preventDefault();
-                $.ajax({
-                    method: "Get",
-                    url: $th.data("href"),
-                    success: function success(result) {
-                        answerHandler(result);
-                    },
-                    error: function error(result) {}
-                });
-            });
-        });
-    });
-    $(function() {
-        $(document).trigger("dom-bind", document);
-    });
-
-    $("#contactForm").submit(function(e) {
-        var $th = $(this);
-        var rules = JSON.parse($th.attr("data-rules") || "{}");
-        $th.validate({
-            rules: rules,
-            normalizer: function normalizer(value) {
-                return $.trim(value);
-            },
-            submitHandler: function submitHandler(form) {
-                var validator = this;
-                var $form = $(form);
-                $.ajax({
-                    method: "POST",
-                    url: $form.attr("action"),
-                    processData: false,
-                    contentType: "application/json",
-                    data: seralizrFormAsJson($form),
-                    success: function success(result) {
-                        answerHandler(result, $form);
-                    },
-                    error: function error(result) {
-                        var errors = result.responseJSON.errors;
-                        if (errors.non_field_errors != undefined) {
-                            $form.find('label[data-name="nonfield"]').html(errors.non_field_errors);
-                        } else {
-                            for (field in errors) {
-                                errors[field] = errors[field].join(", ");
-                            }
-                        }
-                        validator.showErrors(errors);
-                    }
-                });
-            }
-        });
+    $("#contactForm").submit(function(e){
+      e.preventDefault();
+      let name = document.getElementById('contactFormName').value;
+      let email = document.getElementById('contactFormEmail').value;
+      let message = document.getElementById('contactFormMessage').value;
+  
+      $.ajax({
+              method: "POST",
+              url: "https://catalystcontactform.azurewebsites.net/api/SendGrid1",
+              processData: false,
+              contentType: "application/json",
+        data: JSON.stringify({
+          name: name,
+          email: email,
+          message: message
+        }),
+              success: alert("sent")
+      });
     });
     
     $(function() {
