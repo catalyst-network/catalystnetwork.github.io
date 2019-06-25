@@ -360,8 +360,8 @@ $(document).ready(function () {
           $.ajax({
             method: "POST",
             url: $form.attr("action"),
-            dataType : "json",
-            contentType: "application/json; charset=utf-8",
+            dataType : "text",
+            contentType: "application/json",
             data: $form.serializeArray(),
             success: function success(result) {
               answerHandler(result, $form);
@@ -390,7 +390,8 @@ $(document).ready(function () {
         e.preventDefault();
         $.ajax({
           method: "POST",
-
+          dataType : "text",
+          contentType: "application/json",
           url: $form.attr("action"),
           success: function success(result) {
             answerHandler(result);
