@@ -4,46 +4,46 @@
 $(document).ready(function () {
   
 	
-	document.getElementById('submitMessage').addEventListener('submit', submitMessage);
-  function processResponse(response) {
-    if (response.status === 200) {
-      output =
-        `
-      <div class="alert alert-success" role="alert">
-        Thanks, ${document.getElementById('name').value}! We'll be in touch soon!
-      </div>        
-      `;
-      document.getElementById('output').innerHTML = output;
-    } else {
-      output =
-        `
-      <div class="alert alert-danger" role="alert">
-        Oh no! Something went wrong :(
-      </div>        
-      `;
-      document.getElementById('output').innerHTML = output;
-    }
-  }
+	// document.getElementById('submitMessage').addEventListener('submit', submitMessage);
+  // function processResponse(response) {
+  //   if (response.status === 200) {
+  //     output =
+  //       `
+  //     <div class="alert alert-success" role="alert">
+  //       Thanks, ${document.getElementById('name').value}! We'll be in touch soon!
+  //     </div>        
+  //     `;
+  //     document.getElementById('output').innerHTML = output;
+  //   } else {
+  //     output =
+  //       `
+  //     <div class="alert alert-danger" role="alert">
+  //       Oh no! Something went wrong :(
+  //     </div>        
+  //     `;
+  //     document.getElementById('output').innerHTML = output;
+  //   }
+  // }
 
-  function submitMessage(e) {
-    e.preventDefault();
-    let name = document.getElementById('first-name').value;
-    let email = document.getElementById('email').value;
-    let message = document.getElementById('description').value;
-    fetch('https://catalystcontactform.azurewebsites.net/api/SendGrid1', {
-        method: 'POST',
-        headers: {
-          'Accept': 'application/json, text/plain, */*',
-          'Content-type': 'application/json'
-        },
-        body: JSON.stringify({
-          name: name,
-          email: email,
-          message: message
-        })
-      })
-      .then((res) => processResponse(res))
-  }
+  // function submitMessage(e) {
+  //   e.preventDefault();
+  //   let name = document.getElementById('first-name').value;
+  //   let email = document.getElementById('email').value;
+  //   let message = document.getElementById('description').value;
+  //   fetch('https://catalystcontactform.azurewebsites.net/api/SendGrid1', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Accept': 'application/json, text/plain, */*',
+  //         'Content-type': 'application/json'
+  //       },
+  //       body: JSON.stringify({
+  //         name: name,
+  //         email: email,
+  //         message: message
+  //       })
+  //     })
+  //     .then((res) => processResponse(res))
+  // }
 
 
   var burger = document.querySelector('.header__mobile');
@@ -401,7 +401,7 @@ $(document).ready(function () {
           var $form = $(form);
 
           $.ajax({
-            method: $form.attr("method"),
+            method: "POST",
             url: $form.attr("action"),
             data: $form.serializeArray(),
             success: function success(result) {
@@ -430,7 +430,7 @@ $(document).ready(function () {
       $th.on("click", function (e) {
         e.preventDefault();
         $.ajax({
-          method: "GET",
+          method: "POST",
           url: $th.data("href"),
           success: function success(result) {
             answerHandler(result);
