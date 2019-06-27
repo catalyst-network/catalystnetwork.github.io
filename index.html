@@ -77,8 +77,7 @@
             <div class="start__content">
                 <h1 class="start__title title title--white">Empowering the <span
                         class="green bold">decentralised </span>web</h1>
-                <div class="start__button flex-center"><a class="button button--green js-link-ajax-popup"
-                                                          data-href="./popups/newsletter.html">Sign up for updates<span
+                <div class="start__button flex-center"><a href="#subscribe" class="button button--green">Sign up for updates<span
                         class="icon-arrow"></span></a></div>
             </div>
         </div>
@@ -182,7 +181,7 @@
         </div>
     </div>
 </section>
-<section class="subscribe" style="background-color:#19445b">
+<section class="subscribe" id="subscribe" style="background-color:#19445b">
     <div class="wrapper-inner">
         <div class="subscribe__content">
             <h2 class="subscribe__title title green">Stay updated - Join our newsletter</h2>
@@ -191,7 +190,7 @@
                 </p>
             </div>
             <div class="subscribe__form text-center">
-                <form action="#" method="post" class="subscribe-form form-popup">
+                <form action="https://atlascity.us20.list-manage.com/subscribe?u=ceca4cb1be7a6b85274589fe7&id=a8e7bd111f" method="POST" class="subscribe-form form-popup">
                     <div class="flex-center">
                         <div class="subscribe__input">
                             <input type="email" class="form-control" required data-msg="This field is required"
@@ -827,7 +826,7 @@
         <div class="contact__content">
             <h2 class="title title--white contact__title">Get in touch </h2>
             <div class="contact__form">
-                <form class="form-popup" name="form" action="popups/thanks.html" method="POST" data-rules="{
+                <form id="contactForm" class="form-popup" name="form" action="https://catalystcontactform.azurewebsites.net/api/SendGrid1" method="POST" data-rules="{
                         &quot;name&quot;:{&quot;required&quot; : true},                                       
                         &quot;email&quot;: { &quot;required&quot; : true, &quot;email&quot;: true, &quot;emailMethod&quot;: true},                        
                         &quot;phone&quot;: {&quot;required&quot; : true, &quot;minlength&quot;: &quot;8&quot;, &quot;maxlength&quot;: &quot;13&quot;},
@@ -836,12 +835,12 @@
                     <label data-name="nonfield"></label>
                     <div class="form__wrap">
                         <div class="contact__input contact__input--w-100">
-                            <input class="input js-text" type="text" name="name" data-msg="This field is required"
+                            <input id="contactFormName" class="input js-text" type="text" name="name" data-msg="This field is required"
                                    placeholder="Name">
                         </div>
                         <div class="contact__group flex">
                             <div class="contact__input">
-                                <input class="input" type="email" name="email"
+                                <input id="contactFormEmail" class="input" type="email" name="email"
                                        data-msg="Please enter a valid email address"
                                        data-msg-required="This field is required" placeholder="Email">
                             </div>
@@ -854,11 +853,11 @@
                             </div>
                         </div>
                         <div class="contact__textarea">
-                                <textarea class="textarea" name="message" data-msg-required="This field is required"
+                                <textarea id="contactFormMessage" class="textarea" name="message" data-msg-required="This field is required"
                                           placeholder="Message"></textarea>
                         </div>
                         <div class="contact__submit">
-                            <button class="submit flex-center transition" type="submit" id="sendMessage">Send</button>
+                            <button class="submit flex-center transition" type="submit" id="submitMessage">Send</button>
                         </div>
                     </div>
                 </form>
@@ -866,10 +865,8 @@
         </div>
     </div>
     <div class="contact__map">
-        <div id="infowindow">
-            <p><strong>Churrasqueira Farnel de Ílhavo</strong><br>R. de Camões 83<br>3830-152 Ílhavo<br>Португалия
-            </p>
-        </div>
+        <!-- <div id="infowindow">
+        </div> -->
         <div id="map" data-position="{&quot;lat&quot;:51.5175797, &quot;lng&quot;: -0.1826176}"></div>
     </div>
 </section>
@@ -879,7 +876,7 @@
             <div class="footer__block flex flex--center">
                 <div class="footer__text">Newsletter</div>
                 <div class="footer__form">
-                    <form class="form-popup" name="form" action="popups/thanks.html" method="POST" data-rules="{
+                    <form class="form-popup" id="contactForm" name="form" action="https://atlascity.us20.list-manage.com/subscribe?u=ceca4cb1be7a6b85274589fe7&id=a8e7bd111f" method="POST" data-rules="{
                           &quot;email&quot;: { &quot;required&quot; : true, &quot;email&quot;: true, &quot;emailMethod&quot;: true}                        
                         }">
                         <label data-name="nonfield"> </label>
