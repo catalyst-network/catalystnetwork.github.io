@@ -1290,7 +1290,7 @@ iframe {
     padding: 0px 0;
     margin-bottom: 15px;
     margin-top: 50px;
-    width: 399px;
+    width: 265px;
 }
 .team__block.is-active {
     position: relative;
@@ -2341,7 +2341,10 @@ label.error {
     .wrapper-inner {
         width: 460px;
     }
-}@media only screen and (min-width: 480px) {
+}
+
+
+@media only screen and (min-width: 480px) {
   .title {
     font-size: 23px;
   }
@@ -2389,6 +2392,9 @@ label.error {
         padding: 50px 0;
 
     }
+    .team__bottom {
+        background-size: 0;
+    }
 
 }
 
@@ -2401,6 +2407,9 @@ label.error {
 @media (max-width: 568px) {
     .yt-video {
         width: -webkit-fill-available;
+    }
+     .team__bottom {
+        background-size: 0;
     }
 
     .video__block {
@@ -2664,7 +2673,7 @@ label.error {
     }
 
     .team__bottom {
-        background-size: auto 100%;
+        background-size: auto 55%;
         padding-bottom: 0;
     }
 
@@ -3130,7 +3139,7 @@ label.error {
     }
 
     .team__bottom {
-        background-size: auto 100%;
+        background-size: auto 55%;
     }
 
     .team__block {
@@ -3898,7 +3907,7 @@ label.error {
     }
 
     .team__bottom {
-        background-size: 100% auto;
+        background-size: 55% auto;
     }
 
     .features {
