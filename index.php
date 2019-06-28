@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Catalyst</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link rel="stylesheet" media="all" href="static/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <script id="mcjs">
+          !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/c3e8bb440c6ea9391ee80e330/35934534dbbf122bcfcb2f343.js");
+    </script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="preloader">
+        <div class="c-cube">
+            <div class="c-cube__side c-cube__side--front"></div>
+            <div class="c-cube__side c-cube__side--back"></div>
+            <div class="c-cube__side c-cube__side--right"></div>
+            <div class="c-cube__side c-cube__side--left"></div>
+            <div class="c-cube__side c-cube__side--top"></div>
+            <div class="c-cube__side c-cube__side--bottom"></div>
+        </div>
+        <div class="preloader__logo"><img src="static/images/logo.svg"></div>
+    </div>
+</div>
+<header class="header">
+    <div class="wrapper-inner">
+        <div class="header__content"><a class="header__logo" href="index.html"><img
+                src="static/images/logo.svg"></a>
+            <div class="header__menu">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link transition"
+                                                  href="index.html#features">Features</a></li>
+                        <li class="menu__item"><a class="menu__link transition"
+                                                  href="index.html#dayzero">Day Zero Network</a></li>
+                        <li class="menu__item"><a class="menu__link transition" href="index.html#team">Team</a></li>
+                        <li class="menu__item"><a class="menu__link transition"
+                                                  href="index.html#roadmap">Roadmap</a></li>
+                        <li class="menu__item"><a class="menu__link transition"
+                                                  href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__mobile">
+                <div class="header__mobile-item topBar"></div>
+                <div class="header__mobile-item btmBar"></div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="top__social">
+    <a class="transition" href="https://github.com/catalyst-network"
+       target="_blank"><i class="fab fa-github" style="font-size:1.2em;margin-bottom:35px"></i></a>
+    <a class="transition" href="https://catalystnet.slack.com/"
+       target="_blank"><i class="fab fa-slack" style="font-size:1.2em;margin-bottom:35px"></i></a>
+    <a class="transition" href="https://twitter.com/search?q=%40catalystNetOrg&src=typd&lang=en"
+       target="_blank"><span class="icon-twitter" style="margin-bottom:35px"></span></a>
+    <a class="transition" href="https://t.me/CatalystNetOrg"
+       target="_blank"><i class="fab fa-telegram-plane" style="font-size:1.3em;margin-bottom:35px"></i></a>
+    <a class="transition"
+       href="https://medium.com/catalystnetorg"
+       target="_blank">
+        <i class="fab fa-medium-m" style="font-size:1.2em;margin-bottom:35px"></i></a>
+    <a class="transition" href="https://www.reddit.com/r/CatalystNet"
+       target="_blank"><i class="fab fa-reddit" style="font-size:1.2em;margin-bottom:35px"></i></a>
+    <a class="transition"
+       href="https://www.linkedin.com/company/catalyst-network/about/"
+       target="_blank"><span class="icon-linkedin" style="margin-bottom:35px"></span></a>
+    <!--a class="transition" href="#"
+       target="_blank"><i class="fab fa-bitcoin" style="font-size:1.3em;"></i></a-->
+</div>
+<section class="top">
+    <div class="top__start wrap">
+        <div class="wrapper-inner">
+            <div class="start__content">
+                <h1 class="start__title title title--white">Empowering the <span
+                        class="green bold">decentralised </span>web</h1>
+                <div class="start__button flex-center"><a href="#subscribe" class="button button--green">Sign up for updates<span
+                        class="icon-arrow"></span></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="top__about wrap" id="about">
+        <div class="wrapper-inner">
+            <div class="about__content">
+                <div class="about__left">
+                    <div class="about__block flex">
+                        <div class="about__img" data-aos="zoom-out-down" data-aos-delay="400"
+                             data-aos-duration="800"><img src="static/images/about-1.png"></div>
+                        <div class="about__info">
+                            <h3 class="about__caption">ACCESSIBILITY</h3>
+                            <div class="about__text">
+                                <p>Anyone, anywhere any platform</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__block flex about__block--reverse">
+                        <div class="about__img" data-aos="zoom-out-down" data-aos-delay="600"
+                             data-aos-duration="800"><img src="static/images/about-2.png"></div>
+                        <div class="about__info">
+                            <h3 class="about__caption">FUNCTIONALITY</h3>
+                            <div class="about__text">
+                                <p>Light footprint, high speed and software on chip capability makes Catalyst truly
+                                    fast &amp; scalable</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__block flex">
+                        <div class="about__img" data-aos="zoom-out-down" data-aos-delay="800"
+                             data-aos-duration="800"><img src="static/images/about-3.png"></div>
+                        <div class="about__info">
+                            <h3 class="about__caption">DEMOCRACY</h3>
+                            <div class="about__text">
+                                <p>Rewarding computational effort fairly, by using collaborative rather than
+                                    competitive consensus</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__right">
+                    <h2 class="about__title title title--white">How we do it</h2>
+                    <div class="about__text about__text--white">
+                        <p>The Catalyst Network is a fully functional decentralised technology
+                            stack that works in the real world.</p>
+                        <p>Previous attempts to reverse the trend to centralisation within the internet have
+                            failed because the technology was too slow,
+                            resource intensive, specialised, insecure and poorly incentivised -
+                            there was little reason for anyone to use them.</p>
+                        <p>Catalyst Network has been built from the ground up to make decentralisation within
+                            the internet possible - it’s light, fast, accessible, works with common programming
+                            languages, and is compatible within the current internet ecosystem. Most
+                            importantly, unlike mining-based networks, Catalyst rewards all its participants
+                            fairly through collaborative compensation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top__mission wrap" id="internet">
+        <div class="mission__img"><img src="static/images/mission_V2.png"><img class="mission__img-absolute"
+                                                                            src="static/images/mission2.png">
+        </div>
+        <div class="wrapper-inner">
+            <div class="mission__content">
+                <h3 class="mission__caption title">Catalyst Network</h3>
+                <h2 class="mission__title title title--white">Empowering the decentralised web</h2>
+                <div class="mission__block" data-text="Mission">
+                    <h3 class="mission__caption">Mission</h3>
+                    <div class="mission__text">
+                        <p>To empower true decentralisation on the web, on a network owned and run by everyone.
+                        </p>
+                    </div>
+                </div>
+                <div class="mission__block" data-text="Vision">
+                    <h3 class="mission__caption">Vision</h3>
+                    <div class="mission__text">
+                        <p>Our vision is a more transparent, secure, inclusive, fair and democratic economy and
+                            society enabled by decentralised technology.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="connection wrap">
+    <div class="wrapper-inner">
+        <div class="subscribe__content">
+            <div class="subscribe__text text-center">
+                <p>Learn what can be done with a light, fast and secure stack that incentivises everyone who
+                    participates.
+                    We are empowering decentralisation in the internet, and we want you to be part of it.</p>
+            </div>
+            <div class="connection--icon"><a class="transition" href="https://github.com/catalyst-network"
+                                             target="_blank"><i class="fab fa-github"
+                                                                style="font-size:3em; margin-right:30px;"></i></a>
+                <a class="connection__icon" href="https://catalystnet.slack.com/"
+                   target="_blank"><i class="fab fa-slack" style="font-size:3em;"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="subscribe" id="subscribe" style="background-color:#19445b">
+    <div class="wrapper-inner">
+        <div class="subscribe__content">
+            <h2 class="subscribe__title title green">Stay updated - Join our newsletter</h2>
+            <div class="subscribe__text">
+                <p>Enter your email address below to get the latest updates <br> & announcements on our progress.
+                </p>
+            </div>
+            <div class="subscribe__form text-center">
+                <form  method="post" class="subscribe-form form-popup">
+                    <div class="flex-center">
+                        <div class="subscribe__input">
+                            <input type="email" class="form-control" name="news-email" required data-msg="This field is required"
+                                   placeholder="YOUR EMAIL">
+                        </div>
+                        <button type="submit" class="newsletter__button">
+                            <i class="far fa-envelope fa-lg" style="color:#123448; font-size:20px;"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="subscribe__content">
+                <br><br><br><br>
+                <div class="subscribe__text">
+                    <h2 class="subscribe__title title green">Join our community</h2>
+                </div>
+            </div>
+            <div class="subscribe__text">
+                <div class="subscribe__social flex-center">
+                    <a class="transition" href="https://github.com/catalyst-network"
+                       target="_blank"><i class="fab fa-github" style="font-size:1.2em;"></i></a>
+                    <a class="transition" href="https://catalystnet.slack.com/"
+                       target="_blank"><i class="fab fa-slack" style="font-size:1.2em;"></i></a>
+                    <a class="transition" href="https://twitter.com/search?q=%40catalystNetOrg&src=typd&lang=en"
+                       target="_blank"><span class="icon-twitter"></span></a>
+                    <a class="transition" href="https://t.me/CatalystNetOrg"
+                       target="_blank"><i class="fab fa-telegram-plane" style="font-size:1.3em;"></i></a>
+                    <a class="transition" href="https://medium.com/catalystnetorg" target="_blank">
+                    <i class="fab fa-medium-m" style="font-size:1.3em;"></i></a>
+                    <a class="transition" href="https://www.reddit.com/r/CatalystNet"
+                       target="_blank"><i class="fab fa-reddit" style="font-size:1.2em;"></i></a>
+                    <a class="transition" href="https://www.linkedin.com/company/catalyst-network/about/"
+                       target="_blank"><span class="icon-linkedin"></span></a>
+                    <!--a class="transition" href="#"
+                       target="_blank"><i class="fab fa-bitcoin" style="font-size:1.3em;"></i></a-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="features wrap" id="features">
+    <div class="wrapper-inner">
+        <div class="features__content">
+            <h2 class="title title--center features__title">Features</h2>
+            <div class="features__part flex">
+                <div class="features__block snip1295 features__block--top" data-aos="fade-zoom-in"
+                     data-aos-delay="400" data-aos-duration="800">
+                    <div class="border one">
+                        <div>
+                        </div>
+                    </div>
+                    <div class="border two">
+                        <div>
+                        </div>
+                    </div>
+                    <div class="features__img"><img src="static/images/features-1.svg"></div>
+                    <div class="features__text">
+                        <h3>Fast</h3>
+                        <p>New ways of achieving consensus and
+                            managing data make Catalyst competitive
+                            with centralised services.</p>
+                    </div>
+                </div>
+                <div class="features__block snip1295 features__block--top" data-aos="fade-zoom-in"
+                     data-aos-delay="900" data-aos-duration="800">
+                    <div class="border one">
+                        <div></div>
+                    </div>
+                    <div class="border two">
+                        <div></div>
+                    </div>
+                    <div class="features__img"><img src="static/images/features-2.svg"></div>
+                    <div class="features__text">
+                        <h3>Accessible</h3>
+                        <p>Catalyst works with the most common
+                            programming languages, not specialised
+                            code.</p>
+                    </div>
+                </div>
+                <div class="features__block snip1295 features__block--top" data-aos="fade-zoom-in"
+                     data-aos-delay="1400" data-aos-duration="800">
+                    <div class="border one">
+                        <div></div>
+                    </div>
+                    <div class="border two">
+                        <div></div>
+                    </div>
+                    <div class="features__img"><img src="static/images/features-3.svg"></div>
+                    <div class="features__text">
+                        <h3>Democratic</h3>
+                        <p>Collaborative rather than competitive
+                            consensus gives all participants a fair stake.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="features__logo"><img src="static/images/logo-big.svg"></div>
+            <div class="features__part flex">
+                <div class="features__block snip1295 features__block--bottom" data-aos="fade-zoom-in"
+                     data-aos-delay="1900" data-aos-duration="800">
+                    <div class="border one">
+                        <div></div>
+                    </div>
+                    <div class="border two">
+                        <div></div>
+                    </div>
+                    <div class="features__img"><img src="static/images/features-4.svg"></div>
+                    <div class="features__text">
+                        <h3>Integrated</h3>
+                        <p>The Catalyst Network functions within the
+                            current internet ecosystem, with native
+                            integration of existing technologies.</p>
+                    </div>
+                </div>
+                <div class="features__block snip1295 features__block--bottom" data-aos="fade-zoom-in"
+                     data-aos-delay="2400" data-aos-duration="800">
+                    <div class="border one">
+                        <div></div>
+                    </div>
+                    <div class="border two">
+                        <div></div>
+                    </div>
+                    <div class="features__img"><img src="static/images/features-5.svg"></div>
+                    <div class="features__text">
+                        <h3>Light</h3>
+                        <p>Catalyst nodes require very little compute to
+                            function and can run on IoT devices and
+                            Raspberry Pis.</p>
+                    </div>
+                </div>
+                <div class="features__block snip1295 features__block--bottom" data-aos="fade-zoom-in"
+                     data-aos-delay="2900" data-aos-duration="800">
+                    <div class="border one">
+                        <div></div>
+                    </div>
+                    <div class="border two">
+                        <div></div>
+                    </div>
+                    <div class="features__img"><img src="static/images/features-6.svg"></div>
+                    <div class="features__text">
+                        <h3>Secure</h3>
+                        <p>The Catalyst delivers the security of
+                            blockchain without the slow transaction
+                            times.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="network" id="dayzero">
+    <div class="wrapper-inner">
+        <div class="network__content">
+            <h2 class="title title--white network__title">DAY ZERO NETWORK</h2>
+            <div class="network__text">
+                <h3></h3>
+                <p>Investors have been disappointed in past attempts at decentralisation because the network has
+                    failed
+                    to
+                    reach viability. Catalyst breaks that mould by offering a complete, functional Day Zero
+                    Network. By using virtualised nodes as a service, Catalyst will go live with a sustainable
+                    network in place - a world first.</p>
+            </div>
+
+            <!--div class="network__part flex">
+                <div class="network__img">
+                    <div class="network__text">
+                        <h3>The old model of ICOs</h3>
+                    </div>
+                    <svg id="Graph2" xmlns="http://www.w3.org/2000/svg" width="527" height="322"
+                         viewBox="0 0 527 324">
+                        <path d="M794,100l8,14H786Z" transform="translate(-771 -100)"/>
+                        <path d="M1275,396l-13.99,8.012-0.01-16Z" transform="translate(-771 -100)"/>
+                        <path d="M794,396v1h468.22v-1H794Z" transform="translate(-771 -100)"/>
+                        <path d="M963.171,396L963,395.828,1018.83,340l0.17,0.175Z"
+                              transform="translate(-771 -100)"/>
+                        <path d="M907,397h-1V170h1V397Z" transform="translate(-771 -100)"/>
+                        <path d="M793,114h1V397h-1V114Z" transform="translate(-771 -100)"/>
+                        <circle class="fadeIn" fill="#00a999" cx="490.5" cy="69.5" r="7.5"/>
+                        <circle class="fadeIn" fill="#00a999" cx="134.5" cy="295.5" r="7.5"/>
+                        <circle class="fadeIn" fill="#00a999" cx="248.5" cy="239.5" r="7.5"/>
+                        <circle class="fadeIn" fill="#00a999" cx="362.5" cy="205.5" r="7.5"/>
+                        <path d="M1134.36,304.344l-0.72-.688,127-134,0.72,0.688Z" transform="translate(-771 -100)"/>
+                        <path class="dotted" d="M1076,113h1V397h-1V113Z" transform="translate(-771 -100)"/>
+                        <rect class="fadeIn" fill="#00a999" x="249" y="126" width="114" height="44"/>
+                        <path d="M1020.14,340.48l-0.28-.96,114-33,0.28,0.96Z" transform="translate(-771 -100)"/>
+                        <path d="M906,170v-1h354v1H906Z" transform="translate(-771 -100)"/>
+                        <text class="text-svg fadeIn" transform="translate(11.74 145.492) rotate(-89.663)">Network
+                            viability (node distribution)
+                        </text>
+                        <text class="text-svg fadeIn"
+                              transform="matrix(0.699, -0.715, 0.715, 0.699, 207.227, 269.838)">Testnet
+                        </text>
+                        <rect class="fadeIn" fill="#00ab96" x="7" y="272" width="1" height="25"/>
+                        <text class="text-svg fadeIn" x="491.832" y="37.1">Viable</text>
+                        <text class="text-svg fadeIn" x="492.448" y="54.881">Mainnet</text>
+                        <text class="text-svg fadeIn" x="369.447" y="234.881">Mainnet</text>
+                        <text class="text-svg fadeIn" x="477.589" y="140.251">Tokens
+                            <tspan x="477.589" dy="16.8"> are</tspan>
+                            <tspan x="477.589" dy="16.8">Useable</tspan>
+                        </text>
+                        <text class="text-svg fadeIn" x="480.653" y="285">t</text>
+                        <text class="text-svg fadeIn" x="134.038" y="318">ICO</text>
+                        <text class="text-svg fadeIn" x="42.151" y="318">Whitepaper</text>
+                        <text class="text-svg fadeIn" x="200.847" y="110.408">HODL TIME</text>
+                        <text class="text-svg fadeIn" x="305.355" y="145.064">Most Projects
+                            <tspan x="308.355" dy="16.8">Fail here</tspan>
+                        </text>
+                    </svg>
+                </div>
+
+                <div class="network__img">
+                    <div class="network__text">
+                        <h3>Our model for launching Catalyst</h3>
+                    </div>
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" id="Graph1" xmlns="http://www.w3.org/2000/svg"
+                         width="520" height="315" viewBox="0 0 489 318">
+                        <path id="arrow3" fill="#00b7a2" fill-rule="evenodd" d="M206,100l8,14H198Z"
+                              transform="translate(-198 -100)"/>
+                        <path id="arrow2" fill="#00b7a2" fill-rule="evenodd" d="M687,396l-13.99,8.012-0.012-16Z"
+                              transform="translate(-198 -100)"/>
+                        <path id="arrow1" fill="#00b7a2" fill-rule="evenodd"
+                              d="M695.094,101.161l-7.218,8.363-3.651-10.338Z" transform="translate(-198 -100)"/>
+                        <image id="img" class="fadeIn" x="338" y="276" width="35" height="39"
+                               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAnCAYAAACFSPFPAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wUVCyUEEOgQTgAABQpJREFUWMPFmGtoHFUUx3/nzt2ksS8tVKyQJtZWS7W2tlW/VPCb1GzEL6KgUHxUBastCIqgUl+goIiCFR+IiIgPUGjSIhXEbwqljzQlNpI0bYhpEmsfMdlssjv3+GFmd2cn+8huhRy4szt37pz7m/+5d+65I3y3l7pN5QlUfgO6EQEN6yV30LBYWLIBxFJoZCAzDv+eBpmBBacwlwHyHJiPgR+A6+t/ooLVB6OyG8w7gQqyGqHz/wCqHUblWTDvFVfKWuAAsObyYNSnEEet1NZD5Xkw75e5fgNCB7C6fpjGZiARcDgPVMqVFjAPAtkK/m4MgVbVB7OgFbBBh84QzAoBNXGYAVRvA24H/RB0oozPtcB+4LraYfALZxKGSfIV0RMFfJCjoDsR3Yrqz+WBtLNWoCoDWCJMRWAAXSDbUH0DtNRgWwfUBFTDbNIYCwA+al5G7dNlbloHdCDSglTvqgYYCWE0IkTuv3yEZF4vLRA3oX4nmfPNYAEvUorNVuh9OXAFcBG4VKyHCwZ1Yhk0riB46sweps7ciT9zVxDSyEPgbmbq9H7UT4IZDFS2oMVAcWWWgDwJHEToQbQboRfkV2AnsDjf0gn4E5A5F1YkHLALdLqkquqvJ3VqH6m+ZlL9MNUPmiUae+GnwzDeBTpzB8qniKyvoFYXsINs5hBiwBhQFwmhAfgCYXtlH5rE2CEaWmHyLMh0bqE0AFuAA1VAADYA+0E2FMaRF4bJBECGDyh6X5T00QGyAomHafp8I+o+AZYxN1uOtZ9jvNVAM7AyX5SVqF4EBqr42Ii6TrLj10YrLan+hzHu1lLztoJtQjgaKhC7URzBwK9gAupvYma4A2lqBxkOYIx7qEaQnC2q56YiIGETzOwDbQc9a8Llf55MQHQz4jpwTS0GaJo/mNDUbia77BUDjM8viYBkj2D/ec0AJ+cVBP8IdqwdkzpjEP/7Oj35QGZ20WkqJ2CBqQDuGHbsXkxqGAwW1/gNZJ9BuKUGkBOoPha8OmNTUa1g/G+png934Y21Yyb/yi2aFtcwgZd9HDgIXDkHkEuoPIrKoXwyFpVdZA3QUtmF68ZeSOKlhqLLowmT8EOg24CeKtoeR3Vb0D5fF/l1IJmdQEN5H3ICXBJvfCh+JZpC/A66FWQHcDfoRpAGIAvaA9KByF5gnHBtRIGMgK9hSqGraOCR8s9iekDaQQYDRVxM16+/BG+K2N4UlKtRFmFcGmEYNQWALKA+WA/G09CwOFgFEtkf8eS+2RACkjmJvXAPygCiYFIRRWWWMnEbC0uJkGdhahquWhiQGYWE7MJQBiTbS2K0DUkPFMb77CSzEkzca7iPtyCRDEEVJH0/nn03mK7FwiN+H4nRJJI+VSrVjNrccmDfQbZEiqLAwgW7seYrNNZT8B7pIzHShqT75tJVaWXyXzM0gHAaZHXFbVqAt0kkHijpQFw/3lgSSf8ZgFTcOudgItJqePAdOBfbDuWncCvW286ipqdQrikJom4A+3cb3kRvtdAUw5iZghKigQqi4MU2bSKtIJ8hbguwtPQ+SAD/DHasDS/VW+tHDoM3Q36DJgLWBFM2XjwzgnAYWFrSUzBGBrGjSbzJP+r52mJmzQAtW9KgLyC8WlIR8QexI0lM6kQtoSmGqdl0D/BmgVwAN4QdbcdMddcLUicMIPIS8FY4RkawI+2Y1PF63eWshpfeLKAXUSbxzv2CSR27HEVy9h9k9NAxJvbrhwAAAABJRU5ErkJggg=="/>
+                        <path id="x" fill-rule="evenodd" fill="none" stroke="#00a999" stroke-width="1px"
+                              d="M206,396v1H674.219v-1H206Z" transform="translate(-198 -100)"/>
+                        <path fill-rule="evenodd" stroke="#00b7a2" stroke-width="1px"
+                              d="M319,171v0.482H544.882V171H319Z" transform="translate(-198 5)"/>
+                        <path id="line2" fill-rule="evenodd" fill="#00a999"
+                              d="M319.353,276.354l-0.706-.708,399-186,0.700,0.715Z"
+                              transform="translate(-198 -100)"/>
+                        <path id="line1" fill-rule="evenodd" fill="#00a999" stroke="#00a999" stroke-width="1px"
+                              d="M263.606,396.994l-0.594-.785,55.382-41.2,0.594,0.785Z"
+                              transform="translate(-198 -100)"></path>
+                        <path id="y" fill-rule="evenodd" fill="none" stroke="#00a999" stroke-width="1px"
+                              d="M205,114h1V397h-1V114Z" transform="translate(-198 -100)"/>
+                        <path fill-rule="evenodd" fill="none" stroke="#00a999" stroke-width="1px"
+                              d="M319,272h1V396h-1V172Z" transform="translate(-198 -100)"/>
+                        <path fill-rule="evenodd" fill="none" stroke="#00a999" d="M544,172h1V402h-1V172Z"
+                              transform="translate(-198 -100)"/>
+                        <circle id="point3" class="fadeIn" fill="#00a999" stroke="#00a999" stroke-width="1px"
+                                cx="122.5" cy="173.5" r="7.5"/>
+                        <circle id="point2" class="fadeIn" fill="#00a999" stroke="#00a999" stroke-width="1px"
+                                cx="347.5" cy="71.5" r="7.5"/>
+                        <circle id="point1" class="fadeIn" fill="#00a999" cx="120.5" cy="254.5" r="7.5"/>
+                        <text class="text-svg fadeIn" x="22.653" y="315">Whitepaper</text>
+                        <text class="text-svg fadeIn" x="466.653" y="285">t</text>
+                        <text class="text-svg fadeIn" x="186.251" y="315">Private/presale</text>
+                        <text class="text-svg fadeIn" x="420.735" y="315">Token Generating Event</text>
+                        <text class="text-svg fadeIn" transform="translate(418.12 60.305) rotate(-23.994)">
+                            Catalyst Network
+                        </text>
+                        <text class="text-svg fadeIn" transform="translate(421.12 76.305) rotate(-23.994)">
+                            Growth
+                        </text>
+                        <text class="text-svg fadeIn" x="125.832" y="126.1">Functional</text>
+                        <text class="text-svg fadeIn" x="125.448" y="143.881">Mainnet</text>
+                        <text class="text-svg fadeIn" x="325.832" y="36.1">Viable</text>
+                        <text class="text-svg fadeIn" x="325.448" y="53.881">Mainnet</text>
+                        <text class="text-svg fadeIn" transform="translate(84.768 268.242) rotate(-35.994)">
+                            Testnet
+                        </text>
+                        <image class="text-svg fadeIn" xlink:href="static/images/ATLAS_LOGO.png" x="184" y="150"
+                               height="130px" width="130px"/>
+                        <text class="text-svg fadeIn" stroke="#00a999" x="250.352" y="245.818">Day Zero Network
+                        </text>
+                        <image class="text-svg fadeIn" xlink:href="static/images/CATALYST_LOGO.png" x="210" y="81"
+                               height="130px" width="130px"/>
+                        <text class="text-svg fadeIn" stroke="#00a999" x="280.129" y="169.359"> Seed Nodes</text>
+                        <text class="text-svg fadeIn" x="425.59" y="185.251">Tokens are Useable</text>
+                        <text class="text-svg fadeIn" transform="translate(0 145.492) rotate(-89.663)">Network
+                            Viability (node distribution)
+                        </text>
+                        <rect class="fadeIn" fill="#00ab96" x="-5" y="272" width="1" height="25"/>
+                    </svg>
+                </div>
+
+            </div-->
+            <div class="network__text">
+                <h3>GUARANTEED UTILITY</h3>
+                <p>Buying into Catalyst is not buying into a promise: it’s securing a piece of a new
+                    reality. From
+                    Day Zero, there will be a viable network with functioning dApps.</p>
+            </div>
+            <div class="network__text">
+                <h3>PRIVATELY BUILT</h3>
+                <p>The Catalyst Network is being developed by a seasoned team of tech and business veterans to
+                    provide the
+                    backbone of a fast and commercially viable decentralised network and deployed by Atlas City to
+                    support their dApp ecosystem.</p>
+                <p>The Atlas City seed nodes are virtualised in the cloud and data centres distributed
+                    geographically
+                    to ensure network viability. Additional nodes will be bundled with the KAT tokens
+                    and accessible in the presale period for deployment on their infrastructure. Following the TGE
+                    and a predetermined test period, Atlas
+                    City will establish the Swiss Catalyst Foundation and transfer ownership of the network to its
+                    governance.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Video section" id="Videos">
+     <div class="youtube_videos">
+        <div class="wrapper-inner">
+            <div class="team__content">
+                <BR>
+                <BR>
+                <br>
+                 <h2 class="title title--white network__title" STYLE="margin-bottom: -10px;">WHAT IS THE CATALYST NETWORK ALL ABOUT?</h2>
+                 <br>
+                <div class="row">
+                    <div class="team__part flex">
+                   
+                    
+                    <div class="team__block-wrap">
+                        <div class="video__block" data-aos="flip-left" data-aos-delay="500" data-aos-duration="800">
+                            
+                          <iframe class="yt-video" width="400" height="315" src="https://www.youtube.com/embed/CI2JBjVo_5s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           
+                        </div>
+                    </div>
+
+                    <div class="team__block-wrap">
+                        <div class="video__block" data-aos="flip-left" data-aos-delay="500" data-aos-duration="800">
+                            
+                            <iframe class="yt-video" width="400" height="315" src="https://www.youtube.com/embed/5uogKnBdNSw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          
+                           
+                        </div>
+                    </div>
+
+                    <div class="team__block-wrap">
+                        <div class="video__block" data-aos="flip-left" data-aos-delay="500" data-aos-duration="800">
+                           
+                          <iframe class="yt-video" width="400" height="315" src="https://www.youtube.com/embed/Kr6CNS9W-uE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           
+                        </div>
+                    </div>
+                    
+                    </div>
+                
+                </div>
+
+                   
+                         
+                <div class="team__part flex" style="text-align:center; ">
+                       
+                    <div class="team__block-wrap" style="margin:auto;">
+                       
+                        <div class="video__block" data-aos="flip-left" data-aos-delay="500" data-aos-duration="800">
+                            
+                        <iframe class="yt-video" width="400" height="315" src="https://www.youtube.com/embed/lDM_YF0dF4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           
+                        </div>
+                   
+                    </div>
+                     <!--  <div class="col-md-2">
+                        
+                        </div> -->
+                    
+                    <div class="team__block-wrap" style="margin:auto;">
+                        <div class="video__block" data-aos="flip-left" data-aos-delay="500" data-aos-duration="800">
+                        
+                          <iframe class="yt-video" width="400" height="315" src="https://www.youtube.com/embed/rUaQlXPpJ_Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           
+                        </div>
+                  
+                    </div>
+                  
+                </div>
+                   
+               
+
+                   
+            </div>  <br><br>
+               
+                <div style="clear:both"></div>
+            </div>
+        </div>
+
+</section>
+
+
+<section class="team wrap" id="team">
+    <div class="team__top">
+        <div class="wrapper-inner">
+            <div class="team__content">
+                <h2 class="title team__title">Our team</h2>
+            </div>
+        </div>
+    </div>
+    <div class="team__bottom">
+        <div class="wrapper-inner">
+            <div class="team__content">
+                <div class="team__part flex">
+                    <div class="team__spacer"></div>
+                    <div class="team__block-wrap">
+                        <div class="team__block" data-aos="flip-left" data-aos-delay="500" data-aos-duration="800">
+                            <div class="team__top">
+                                <div class="team__img"><img src="static/images/DarrenOliveiro-Priestnall.png"></div>
+                                <a class="team__icon flex-center transition"
+                                   href="https://www.linkedin.com/in/darrenop/" target="_blank"><span
+                                        class="icon-linkedin"> </span></a>
+                            </div>
+                            <h3 class="team__name">Darren Oliveiro-Priestnall</h3>
+                            <p class="team__position">Co-founder, CEO &amp; CTO</p>
+                            <div class="team__text-wrap">
+                                <p class="team__text">Darren has more than 20 years of experience in the software
+                                    engineering and technology industry working at Microsoft, BAE systems. He is a
+                                    Member of the British Computer Society as well as a Certified Ethical Hacker,
+                                    Certified Network Defence Architect and Certified Blockchain Professional.<span
+                                            class="team__more team__more--d-block transition js-more">less</span></p>
+                            </div>
+                            <div class="team__more transition js-more">more</div>
+                        </div>
+                    </div>
+
+                    <div class="team__block-wrap">
+                        <div class="team__block" data-aos="flip-left" data-aos-delay="600" data-aos-duration="800">
+                            <div class="team__top">
+                                <div class="team__img"><img src="static/images/ChrisJustice.png"></div>
+                                <a class="team__icon flex-center transition"
+                                   href="https://www.linkedin.com/in/chris-justice/" target="_blank"><span
+                                        class="icon-linkedin"> </span></a>
+                            </div>
+                            <h3 class="team__name">Chris Justice</h3>
+                            <p class="team__position">Co-founder, President &amp; COO</p>
+                            <div class="team__text-wrap">
+                                <p class="team__text">Chris has over 30 years’ experience in finance and as an
+                                    entrepreneur, including as CEO of an Internet-focused media and advertising company
+                                    that he led from start-up to NASDAQ IPO. Prior to co-founding Atlas City with Darren
+                                    and the team, Chris was COO and Head of Europe for Janus Capital
+                                    International & then Head of Distribution Initiatives for investors.<span
+                                            class="team__more team__more--d-block transition js-more">less</span></p>
+                            </div>
+                            <div class="team__more transition js-more">more</div>
+                        </div>
+                    </div>
+
+                    <div class="team__block-wrap">
+                        <div class="team__block" data-aos="flip-left" data-aos-delay="700" data-aos-duration="800">
+                            <div class="team__top">
+                                <div class="team__img"><img src="static/images/JosephChristopherson.png"></div>
+                                <a class="team__icon flex-center transition"
+                                   href="https://www.linkedin.com/in/joseph-christopherson/" target="_blank"><span
+                                        class="icon-linkedin"> </span></a>
+                            </div>
+                            <h3 class="team__name">Joseph Christopherson</h3>
+                            <p class="team__position">Co-founder, CMO</p>
+                            <div class="team__text-wrap">
+                                <p class="team__text">Joe, has a Masters degree in Architecture and Urban Design from
+                                    one of Europe’s highest ranked schools. Although Joe has a design-focused
+                                    background, he has always been passionate about technology. He has won runner-up prizes for numerous Hackathons and was a top 10
+                                    finalist for Europe’s largest Blockchain Hackathon in 2017.<span
+                                            class="team__more team__more--d-block transition js-more">less</span></p>
+                            </div>
+                            <div class="team__more transition js-more">more</div>
+                        </div>
+                    </div>
+                    <div class="team__spacer"></div>
+                    <div class="team__block-wrap">
+                        <div class="team__block" data-aos="flip-left" data-aos-delay="900" data-aos-duration="800">
+                            <div class="team__top">
+                                <div class="team__img"><img src="static/images/JamesKirby.png"></div>
+                                <a class="team__icon flex-center transition"
+                                   href="https://github.com/nshcore" target="_blank"><span><i class="fab fa-github"
+                                                                                              style="font-size:1.3em;"></i>
+                                        </span></a>
+                            </div>
+                            <h3 class="team__name">James Kirby</h3>
+                            <p class="team__position">Head of Engineering</p>
+                        </div>
+                    </div>
+
+                    <div class="team__block-wrap">
+                        <div class="team__block" data-aos="flip-left" data-aos-delay="1200" data-aos-duration="800">
+                            <div class="team__top">
+                                <div class="team__img"><img src="static/images/matthieu.jpg"></div>
+                                <a class="team__icon flex-center transition"
+                                   href="https://github.com/monsieurleberre" target="_blank"><span>
+                                        <i class="fab fa-github" style="font-size:1.3em;"></i></span></a>
+                            </div>
+                            <h3 class="team__name">Matthieu Le Berre</h3>
+                            <p class="team__position">Senior Protocol Engineer</p>
+                        </div>
+                    </div>
+
+                    <div class="team__block-wrap">
+                        <div class="team__block" data-aos="flip-left" data-aos-delay="1100" data-aos-duration="800">
+                            <div class="team__top">
+                                <div class="team__img"><img src="static/images/fran.jpg"></div>
+                                <a class="team__icon flex-center transition"
+                                   href="https://github.com/franssl" target="_blank"><span>
+                                        <i class="fab fa-github" style="font-size:1.3em;"></i></span></a>
+                            </div>
+                            <h3 class="team__name">Fran Sage-Ling</h3>
+                            <p class="team__position">Blockchain Developer</p>
+                        </div>
+                    </div>
+
+                    <div class="team__block-wrap">
+                        <div class="team__block" data-aos="flip-left" data-aos-delay="1300" data-aos-duration="800">
+                            <div class="team__top">
+                                <div class="team__img"><img src="static/images/sanjay.jpg"></div>
+                                <a class="team__icon flex-center transition"
+                                   href="https://github.com/atlassanjay" target="_blank"><span>
+                                        <i class="fab fa-github" style="font-size:1.3em;"></i></span></a>
+                            </div>
+                            <h3 class="team__name">Sanjay Patel</h3>
+                            <p class="team__position">Blockchain Developer</p>
+                        </div>
+                    </div>
+
+                    <div class="team__block-wrap">
+                        <div class="team__block" data-aos="flip-left" data-aos-delay="1000" data-aos-duration="800">
+                            <div class="team__top">
+                                <div class="team__img"><img src="static/images/stephen.jpg"></div>
+                                <a class="team__icon flex-center transition"
+                                   href="https://github.com/stxphxn" target="_blank"><span><i
+                                        class="fab fa-github" style="font-size:1.3em;"></i>
+                                        </span></a>
+                            </div>
+                            <h3 class="team__name">Stephen Horsfall</h3>
+                            <p class="team__position">Blockchain Developer</p>
+                        </div>
+                    </div>
+
+                    <div class="team__block-wrap">
+                        <div class="team__block" data-aos="flip-left" data-aos-delay="1400" data-aos-duration="800">
+                            <div class="team__top">
+                                <div class="team__img"><img src="static/images/dennis.jpg"></div>
+                                <a class="team__icon flex-center transition"
+                                   href="https://github.com/millymanz" target="_blank"><span>
+                                        <i class="fab fa-github" style="font-size:1.3em;"></i></span></a>
+                            </div>
+                            <h3 class="team__name">Dennis Owusu-Ansah</h3>
+                            <p class="team__position">Blockchain Developer</p>
+                        </div>
+                    </div>
+                    <div class="team__block-wrap">
+                        <div class="team__block" data-aos="flip-left" data-aos-delay="1400" data-aos-duration="800">
+                            <div class="team__top">
+                                <div class="team__img"><img src="static/images/kearney.jpg"></div>
+                                <a class="team__icon flex-center transition"
+                                   href="https://github.com/kearneyjj1" target="_blank"><span>
+                                        <i class="fab fa-github" style="font-size:1.3em;"></i></span></a>
+                            </div>
+                            <h3 class="team__name">Joseph Kearney</h3>
+                            <p class="team__position">Blockchain & Cryptography Specialist</p>
+
+                        </div>
+                    </div>
+
+                    <div class="team__block-wrap">
+                        <div class="team__block" data-aos="flip-left" data-aos-delay="800" data-aos-duration="800">
+                            <div class="team__top">
+                                <div class="team__img"><img src="static/images/PaulineBernat.png"></div>
+                                <a class="team__icon flex-center transition"
+                                   href="https://github.com/PaulineBernat" target="_blank"><span
+                                        class="fab fa-github"> </span></a>
+                            </div>
+                            <h3 class="team__name">Pauline Bernat</h3>
+                            <p class="team__position">Researcher Manager</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="team__info">
+                    <div  class="team__logo"><img width="" src="static/images/logo-big.svg" alt=""></div>
+                    <p style="color:#1a4866;">The founding team at Catalyst consists of veterans from the previous digital revolution, the
+                        emergence of the Internet. The team has a track record of success in building companies and
+                        businesses that thrive.</p>
+                    <div class="team__button flex-center"><a style="color:#1a4866;" href="mailto: info@catalystnet.org" class="button button--green">Join Us<span
+                            class="icon-arrow"></span></a></div>
+                </div>
+
+                <br>
+                <br>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+ <div class="timeline__line js-line" style="width: 3200px;top: 86.5%;opacity: 1;height: 1px;"></div>
+    </div>
+
+</section>
+
+<section class="timeline wrap" id="roadmap">
+    <div class="wrapper-inner">
+        <h2 class="title timeline__title">Roadmap</h2>
+    </div>
+    <div class="timeline__content">
+        <div class="timeline__wrapper js-timeline-wrapper">
+            <div class="timeline__block js-timeline">
+                <div class="timeline__event js-event" data-aos="fade-down" data-aos-delay="400"
+                     data-aos-duration="800">
+                    <p class="timeline__date">2017</p>
+                    <ul class="timeline__list">
+                        <li>Three white papers published</li>
+                    </ul>
+                </div>
+                <div class="timeline__event js-event odd" data-aos="fade-up" data-aos-delay="500"
+                     data-aos-duration="800">
+                    <p class="timeline__date">Q1 2018</p>
+                    <ul class="timeline__list">
+                        <li>Initial investment &
+                        engineering team hired,
+                        Prototype test network built
+                        and used by third parties to
+                        validate ideas
+                        </li>
+                    </ul>
+                </div>
+                <div class="timeline__event js-event" data-aos="fade-up" data-aos-delay="600"
+                     data-aos-duration="700">
+                    <p class="timeline__date">Q2 2018 </p>
+                    <ul class="timeline__list">
+                        <li>7 projects & proofs of
+                        concept, 3 Evaluation
+                        sandbox invitations
+                        </li>
+                    </ul>
+                </div>
+                <div class="timeline__event js-event odd" data-aos="fade-up" data-aos-delay="600"
+                     data-aos-duration="800">
+                    <p class="timeline__date">Q1 2019 </p>
+                    <ul class="timeline__list">
+                        <li>Patents filed</li>
+                        <li>Open source code & public developer test net</li>
+                    </ul>
+                </div>
+                <div class="timeline__event js-event" data-aos="fade-down" data-aos-delay="700"
+                     data-aos-duration="900">
+                    <p class="timeline__date">Q2 2019 </p>
+                    <ul class="timeline__list">
+                        <li>Catalyst wallet & secure distributed file storage</li>
+                        <li>First commercial projects developed and deployed</li>
+                    </ul>
+                </div>
+                <div class="timeline__event js-event odd" data-aos="fade-up" data-aos-delay="600"
+                     data-aos-duration="1000">
+                    <p class="timeline__date">Q3 2019 </p>
+                    <ul class="timeline__list">
+                        <li>TGE starts</li>
+                        <li>Node launch</li>
+                    </ul>
+                </div>
+
+                <div class="timeline__event js-event" data-aos="fade-down" data-aos-delay="700"
+                     data-aos-duration="1100">
+                    <p class="timeline__date">Q4 2019 </p>
+                    <ul class="timeline__list">
+                        <li>TGE closes</li>
+                    </ul>
+                </div>
+                <div class="timeline__event js-event odd" data-aos="fade-up" data-aos-delay="800"
+                     data-aos-duration="1200">
+                    <p class="timeline__date">Q1 2020</p>
+                    <ul class="timeline__list">
+                        <li>Public Testnet launch</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="timeline__line js-line"></div>
+        <a class="js-timeline-next timeline__button timeline__button--next" href="#"></a><a
+            class="js-timeline-prev timeline__button timeline__button--prev" href="#"></a>
+    </div>
+</section>
+<!--section class="followus wrap">
+    <div class="wrapper-inner">
+        <div class="followus__content">
+            <h2 class="title followus__title">Follow Us</h2>
+            <div class="flex">
+                <div class="flex__item"><a class="followus__block img" href="#"><img
+                        src="static/images/tweets.png">
+                    <div class="followus__text">
+                        <div class="followus__head followus__head--main transition">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                        </div>
+                        <div class="followus__name">Mary Ann Azevedo</div>
+                        <div class="followus__date followus__date--white">Decemver 25 / 2018</div>
+                    </div>
+                </a>
+                    <div class="followus__part flex"><a class="followus__card transition" href="#">
+                        <div class="followus__img img"><img src="static/images/tweets.png"></div>
+                        <div class="followus__info">
+                            <div class="followus__date">Decemver 25 / 2018</div>
+                            <div class="followus__head">Proin gravida dolor sit amet lacus accumsan et viverra justo
+                                commodo.
+                            </div>
+                            <div class="followus__name">Mary Ann Azevedo</div>
+                        </div>
+                    </a><a class="followus__card transition" href="#">
+                        <div class="followus__img img"><img src="static/images/tweets.png"></div>
+                        <div class="followus__info">
+                            <div class="followus__date">Decemver 25 / 2018</div>
+                            <div class="followus__head">Proin gravida dolor sit amet lacus accumsan et viverra justo
+                                commodo.
+                            </div>
+                            <div class="followus__name">Mary Ann Azevedo</div>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="flex__item"><a class="twitter-timeline" data-width="572" data-height="709"
+                                           data-theme="light"
+                                           href="https://twitter.com/catalystNetOrg?ref_src=twsrc%5Etfw">Tweets by
+                    catalystNetOrg</a></div>
+            </div>
+        </div>
+    </div>
+
+</section-->
+<section class="contact wrap" id="contact">
+    <div class="wrapper-inner">
+        <div class="contact__content">
+            <h2 class="title title--white contact__title">Get in touch </h2>
+            <div class="contact__form">
+               
+                <form action="mail.php" method="post" class="form-popup">
+                   
+                    <label data-name="nonfield"></label>
+                    <div class="form__wrap">
+                        <div class="contact__input contact__input--w-100">
+                            <input name="name" required class="input js-text" type="text" data-msg="This field is required"
+                                   placeholder="Name">
+                        </div>
+                        <div class="contact__group flex">
+                            <div class="contact__input">
+                                <input class="input" type="email" name="email" required
+                                       data-msg="Please enter a valid email address"
+                                       data-msg-required="This field is required" placeholder="Email">
+                            </div>
+                            <div class="contact__input">
+                                <input class="input" type="number" name="phone" minlength="8" maxlength="13"
+                                       data-msg-required="This field is required"
+                                       data-msg-minlength="Please enter no less than 8 characters"
+                                       data-msg-maxlength="Please enter no more than 13 characters"
+                                       placeholder="Phone">
+                            </div>
+                        </div>
+                        <div class="contact__textarea">
+                                <textarea class="textarea" name="message" maxlength="1000" data-msg-required="This field is required"
+                                          placeholder="Message"></textarea>
+                        </div>
+                        <div class="contact__submit">
+                            <button class="submit flex-center transition" type="submit" id="submit">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="contact__map">
+        <!-- <div id="infowindow">
+        </div> -->
+        <div id="map" data-position="{&quot;lat&quot;:51.5175797, &quot;lng&quot;: -0.1826176}"></div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="wrapper-inner">
+        <div class="footer__content flex flex--center">
+            <div class="footer__block flex flex--center">
+                <div class="footer__text">Newsletter</div>
+                <div class="footer__form">
+                    <form class="form-popup" id="contactForm" name="form" action="https://atlascity.us20.list-manage.com/subscribe?u=ceca4cb1be7a6b85274589fe7&id=a8e7bd111f" method="POST" data-rules="{
+                          &quot;email&quot;: { &quot;required&quot; : true, &quot;email&quot;: true, &quot;emailMethod&quot;: true}                        
+                        }">
+                        <label data-name="nonfield"> </label>
+                        <div class="footer__group">
+                            <div class="footer__input">
+                                <input type="email" name="email" data-msg="Please enter a valid email address"
+                                       data-msg-required="This field is required" placeholder="Email address">
+                            </div>
+                            <div class="footer__submit">
+                                <button class="flex-center transition" type="submit"><span class="icon-mail"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__social flex-center">
+                <a class="transition" href="https://github.com/catalyst-network"
+                   target="_blank"><i class="fab fa-github" style="font-size:1.3em;"></i></a>
+                <a class="transition" href="https://catalystnet.slack.com/"
+                   target="_blank"><i class="fab fa-slack" style="font-size:1.3em;"></i></a>
+                <a class="transition" href="https://twitter.com/search?q=%40catalystNetOrg&src=typd&lang=en"
+                   target="_blank"><span class="icon-twitter" style="font-size:1.3em;"></span></a>
+                <a class="transition" href="https://t.me/CatalystNetOrg"
+                   target="_blank"><i class="fab fa-telegram-plane" style="font-size:1.3em;"></i></a>
+                <a class="transition" style="font-size:1.3em;" href="https://medium.com/catalystnetorg"
+                   target="_blank">
+                    <i class="fab fa-medium-m"></i></a>
+                <a class="transition" href="https://www.linkedin.com/company/catalyst-network/about/"
+                   target="_blank"><span class="icon-linkedin" style="font-size:1.3em;"></span></a>
+
+
+                <!--a class="transition" href="#"
+                   target="_blank"><i class="fab fa-bitcoin" style="font-size:1.3em;"></i></a-->
+
+
+            </div>
+            <div class="footer__links"><a class="transition" href="policy.html" target="_blank">Privacy
+                Policy </a><a class="transition" href="terms_conditions.html" target="_blank">Terms and
+                conditions</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="wrapper-with-mask">
+    <div class="popup js-ajax-popup"></div>
+</div>
+
+<script src="static/js/jquery.js"></script>
+<script src="static/js/jquery-validate.js"></script>
+<script src="static/js/aos.js"></script>
+<script src="static/js/slick-carousel.js"></script>
+<script src="static/js/newmain.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap&amp;key=AIzaSyAqOazqPcP8E-_s-Vp7MRbP3UMUgS2xfQw"
+        async defer></script>
+<script src="https://platform.twitter.com/widgets.js" async charset="utf-8"></script>
+</body>
+</html>
