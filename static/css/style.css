@@ -4052,6 +4052,20 @@ label.error {
 
 }
 
+.media_coverage {
+    background: url("../images/bg3.png") top center no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+
+}
+
+.media_section {
+    
+    background-size: cover;
+    padding-bottom: 30px;
+
+}
+
 .video__block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4114,8 +4128,8 @@ label.error {
 }
 
 .stories{
-    background-color:#fff;
-    padding: 30px 0;
+    background:url("../images/bg3.png") top center no-repeat;
+   
 }
 
 
@@ -4202,4 +4216,16 @@ label.error {
     }
 }
 
+@media only screen and (max-width: 1200px) {
+    .team__bottom {
+       background-color: #16ac9f;
+    }
+    .slick-list {
+        height: 130px;
+    margin-top: 70px;
+    }
+    .timeline__wrapper {
+        height: 170px;
+    }
+}
 
