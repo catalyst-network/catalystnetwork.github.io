@@ -3992,7 +3992,7 @@ label.error {
 
 @media screen and (max-width: 720px) {
     .top__start .wrapper-inner {
-        padding-top: 140px !important;
+        padding-top: 80px !important;
     }
 }
 
@@ -4045,9 +4045,17 @@ label.error {
 
 }
 
+ #webinarbutton {
+        visibility: hidden;
+    }  
+
 @media only screen and (max-width: 960px) {
     .top__social {
        display:none;
+    }
+    
+    #webinarbutton {
+        visibility: visible;
     }
   
 }
