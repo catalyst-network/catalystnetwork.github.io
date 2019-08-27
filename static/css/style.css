@@ -3059,7 +3059,7 @@ label.error {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        left: 60%;
+        left: 55%;
         -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         transform: translateX(-50%);
@@ -3477,7 +3477,7 @@ label.error {
     }
 
     .timeline__event {
-        margin-left: -40px;
+        /*margin-left: -40px;*/
     }
 
     .team__title {
