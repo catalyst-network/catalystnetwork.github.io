@@ -1,0 +1,435 @@
+/* General page styles */
+/* ------------------------------------------------------ */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  position: relative;
+  background: url('../images/bg.png') top center no-repeat;
+  background-size: cover;
+}
+
+body:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url('../images/bg.png') top center no-repeat;
+  background-size: cover;
+  opacity: .75;
+  z-index: -1;
+}
+
+main {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+  align-items: center;
+  max-width: 1200px;
+  padding: 3.5%;
+  margin: 0 auto;
+}
+
+svg {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  height: 1em;
+  fill: currentColor;
+}
+
+.visually-hidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.button-link {
+  display: inline-block;
+  flex: 1;
+  min-height: 34px;
+  padding: 16px 24px;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: middle;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #44ac9f;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #44ac9f;
+  border-image: initial;
+  border-radius: 3px;
+  transition: all 0.2s ease 0s;
+}
+
+
+.button-link:hover, .button-link:focus {
+  background-color: #44ac9f;
+}
+
+
+/* Text */
+/* ------------------------------------------------------ */
+
+.announcement {
+  font-size: 30px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .announcement {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .announcement {
+    font-size: 48px;
+  }
+}
+
+
+.title {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 0 24px;
+  opacity: 0;
+  transition: all .1s;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 48px;
+  }
+}
+
+
+.deck {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+  min-height: 100px;
+  opacity: 0;
+  transition: all 1s;
+}
+
+@media (min-width: 768px) {
+  .deck {
+    font-size: 18px;
+  }
+}
+
+
+
+/* Video section */
+/* ------------------------------------------------------ */
+
+.logo {
+ 
+}
+
+.logo-link {
+  display: inline-block;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.logo-link:hover, .logo-link:focus {
+  opacity: .8;
+}
+
+.kicker {
+  color: #959DA5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  color: #fff;
+  flex: 1;
+  padding: 3.5%;
+  margin: 0 auto;
+}
+
+.video:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: 95%;
+  opacity: .025;
+}
+
+.video__intro {
+  position: relative;
+  max-width: 800px;
+  margin: 50px auto 25px;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 25px auto;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#js-livestream {
+  opacity: 0;
+  transition: all 2s;
+}
+
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  min-height: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0;
+  transition: all 2s;
+}
+
+.fade-in {
+  opacity: 1 !important;
+}
+
+.countdown__item {
+  margin: 0 3.5%;
+}
+
+.countdown__number {
+  display: block;
+  color: #44ac9f;
+  font-size: 40px;
+}
+
+@media (min-width: 768px) {
+  .countdown__number {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 768px) {
+  .countdown__number {
+    font-size: 64px;
+  }
+}
+
+.countdown__label {
+  color: #959DA5;
+}
+
+
+/* User CTAs: Calendar, MailChimp */
+/* ------------------------------------------------------ */
+
+.cta {
+  position: relative;
+  padding: 25px 3.5% 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .cta {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+#js-cta {
+  opacity: 0;
+  transition: all 2s;
+}
+
+
+.cta__item {
+  margin: 25px 0 0;
+  font-size: 0; /* eliminates extra spacing between inline-block items */
+}
+
+@media (min-width: 600px) {
+  .cta__button-group {
+    display: flex;
+  }
+}
+
+.cta-heading {
+  font-size: 18px;
+  margin: 0 0 20px;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .cta-heading {
+    font-size: 20px;
+  }
+}
+
+.cta-description {
+  font-size: 14px;
+  margin: 0 0 20px;
+}
+
+.cta__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px 10px 0;
+}
+
+.cta__button svg {
+  margin-right: 4px;
+}
+
+/* MailChimp signup */
+/* ------------------------------------------------------ */
+
+.mc-input-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#mc_embed_signup_scroll {
+  position: relative;
+}
+
+input {
+  -webkit-appearance: none;
+  min-height: 34px;
+  padding: 16px 24px;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+
+input[type="email"] {
+  color: #24292e;
+  background-color: #fff;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(27,31,35,0.075);
+  margin-right: 10px;
+}
+
+input[type="email"]:hover, input[type="email"]:focus {
+  border-color: #2188ff;
+  outline:none;
+  box-shadow:inset 0 1px 2px rgba(27,31,35,0.075),0 0 0 0.2em rgba(3,102,214,0.3);
+}
+
+input[type="submit"] {
+  font-weight: 500;
+  color: #fff;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  background-color: #44ac9f;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #44ac9f;
+  border-image: initial;
+  border-radius: 3px;
+  transition: all 0.2s ease 0s;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus {
+  background-color: #44ac9f;
+}
+
+
+
+/* MailChimp error styles */
+/* ------------------------------------------------------ */
+
+#mc_embed_signup div.mce_inline_error, #mce-success-response, #mce-error-response {
+  position: absolute;
+  top: 110%;
+  width: 100%;
+  background: none !important;
+  color: #ff1a7d !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  margin: 0 !important;
+  text-align: left;
+  padding: 0 !important;
+}
+
+#mce-error-response a {
+  color: #2886f0;
+}
+
+
+/* Universe banner */
+/* ------------------------------------------------------ */
+
+
+.universe-banner {
+  background: linear-gradient(135deg, #010C4E 0%, #44ac9f 75%);
+  padding: 25px;
+  opacity: .9;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.universe-banner__link {
+  color: #0c2c3e;
+  text-decoration: none;
+}
+
+.universe-banner__link:hover, .universe-banner__link:focus {
+  text-decoration: underline;
+}
