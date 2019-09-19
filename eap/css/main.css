@@ -374,7 +374,7 @@ input[type="text"] {
   margin-right: 10px;
 }
 
-input[type="textArea"] {
+input[type="textarea"] {
   margin-bottom: 20px;
   color: #24292e;
   background-color: #fff;
