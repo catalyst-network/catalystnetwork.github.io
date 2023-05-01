@@ -49,7 +49,7 @@
     "gulp-changed": "^3.1.1",
     "gulp-consolidate": "^0.2.0",
     "gulp-csso": "^3.0.0",
-    "gulp-iconfont": "^9.1.0",
+    "gulp-iconfont": "^11.0.1",
     "gulp-imagemin": "^4.1.0",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^7.0.0",
