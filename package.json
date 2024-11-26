@@ -72,7 +72,7 @@
     "laggard": "2.0.1",
     "lodash.merge": "^4.6.0",
     "mantis-querist": "^0.5.0",
-    "node-notifier": "^5.1.2",
+    "node-notifier": "^8.0.1",
     "postcss-alias": "2.0.0",
     "postcss-alias-atrules": "0.0.0",
     "postcss-calc": "^6.0.1",
