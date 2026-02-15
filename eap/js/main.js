@@ -1,20 +1,17 @@
 var template = {
-    title: 'JOIN THE FIRST DLT NETWORK WHICH ENABLES ALL DEVELOPERS TO PARTICIPATE IN THE DECENTRALISED COMPUTING REVOLUTION!',
-    description: 'The Catalyst Network is a fast, light, secure and decentralised network that enables all developers to quickly develop and deploy dapps and smart contracts — without needing to invest time and money learning new programming languages. Use your existing skills to tap into a rapidly expanding market and join a growing community of developers working to bring blockchain technology into the mainstream.',
+    title: 'Get involved with Catalyst Network',
+    description: 'Catalyst is a decentralization-first blockchain. If you want to build, test, or help operate the network, use the links below to find the explorer, the development plan, GitHub repos, and the community.',
     socialCard: '',
-    url: 'https:/catalystnet.org/eap',
+    url: 'https://catalystnet.org/eap/',
     twitter: '@CatalystNetOrg',
-    metaTitle: 'Catalyst Developer Signup',
-    metaDescription: '',
+    metaTitle: 'Catalyst Network - Get Involved',
+    metaDescription: 'Links for developers and node operators: development plan, explorer, GitHub, and community.',
 }
 
 
-var countDownDate = new Date(template.date).getTime(), // The countdown is intentionally set 15 mins prior to the actual event
-    countdown = document.getElementById('js-countdown');
-    cta = document.getElementById('js-cta');
-    title = document.getElementById('js-title');
-    kicker = document.getElementById('js-kicker');
-    deck = document.getElementById('js-deck');
+var cta = document.getElementById('js-cta');
+var title = document.getElementById('js-title');
+var deck = document.getElementById('js-deck');
 
     title.innerHTML = template.title;
 
