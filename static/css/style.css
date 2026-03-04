@@ -1691,6 +1691,10 @@ iframe {
     position: relative;
 }
 
+.mission__block--research {
+    margin-top: 26px;
+}
+
 .mission__block:before {
     content: attr(data-text);
     font-size: 60px;
