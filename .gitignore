@@ -1,13 +1,7 @@
 .idea/*
 __MACOSX/*
 .DS_Store
+**/.DS_Store
 
-.vs/VSWorkspaceState.json
-
-.vs/slnx.sqlite
-
-.vs/ProjectSettings.json
-
-.vs/catalystnetwork.github.io/v16/.suo
-
-.vs/catalystnetwork.github.io/config/applicationhost.config
+.vs/
+.vscode/
