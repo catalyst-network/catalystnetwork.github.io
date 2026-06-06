@@ -21,12 +21,20 @@ $(document).ready(function() {
     if ($(window).width() > "1200") {
         $(window).on('scroll touchmove', function(event) {
             var curPos = $(this).scrollTop() + 170;
-            $(".wrap").each(function() {
-                var top = $(this).offset().top;
-                var bottom = top + $(this).outerHeight();
+            $('.menu__list a[href*="#"]').each(function() {
+                var hash = this.hash;
+                if (!hash || hash === '#' || hash === '#0') {
+                    return;
+                }
+                var target = $(hash);
+                if (!target.length) {
+                    return;
+                }
+                var top = target.offset().top;
+                var bottom = top + target.outerHeight();
                 if (curPos > top && curPos < bottom) {
                     $(".menu__list").find('a').removeClass('is-active');
-                    $(".menu__list").find('a[href="index.html#' + $(this).attr('id') + '"]').addClass('is-active');
+                    $(this).addClass('is-active');
                 }
             });
         });
