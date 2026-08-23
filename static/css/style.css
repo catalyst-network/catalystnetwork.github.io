@@ -5839,3 +5839,22 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     background: #16ac9f;
     color: #fff;
 }
+
+.archive-notice {
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    padding: 0.9rem 1.5rem;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.archive-notice a {
+    color: #16ac9f;
+    font-weight: 600;
+    text-decoration: underline;
+}
